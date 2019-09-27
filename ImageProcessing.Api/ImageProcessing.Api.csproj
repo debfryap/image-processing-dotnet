@@ -148,8 +148,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Swagger\AuthorizationHeaderFilter.cs" />
-    <Compile Include="ViewModel\ResponseApi.cs" />
-    <Compile Include="ViewModel\ResultUploadVM.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
