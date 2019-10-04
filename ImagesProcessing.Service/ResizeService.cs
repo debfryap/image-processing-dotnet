@@ -6,9 +6,6 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Web;
 
 namespace ImagesProcessing.Service
@@ -88,7 +85,8 @@ namespace ImagesProcessing.Service
                             convert_size = convert.FromByte(outStream.Length),
                             width = size.Width,
                             height = size.Height,
-                            data_image = "data:" + postedFile.ContentType + ";base64," + Convert.ToBase64String(outStream.ToArray()),
+                            //data_image = "data:" + postedFile.ContentType + ";base64," + Convert.ToBase64String(outStream.ToArray()),
+                            data_image = Convert.ToBase64String(outStream.ToArray())
                         });
 
 

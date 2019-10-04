@@ -16,11 +16,14 @@ namespace ImagesProcessing.Service
             switch (mode)
             {
                 case "crop":
-                    resizeMode = ResizeMode.BoxPad;
+                    resizeMode = ResizeMode.Crop;
                     break;
 
                 case "stretch":
                     resizeMode = ResizeMode.Stretch;
+                    break;
+                default:
+                    resizeMode = ResizeMode.BoxPad;
                     break;
             }
             return new ResizeLayer(size, resizeMode, AnchorPosition.Center);
