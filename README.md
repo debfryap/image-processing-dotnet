@@ -1,4 +1,4 @@
 
-# API Image Processing using .NET
+# .NET API Image Processing
 
 Library Documentation https://imageprocessor.org/
